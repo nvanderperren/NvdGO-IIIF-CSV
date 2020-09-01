@@ -11,7 +11,7 @@ def set_urls(csv_file):
    
 def check_urls(urls):
     header = ["URL", "response"]
-    with open("status_IIIF_nvdgo_letterenhuis.csv", 'w') as output_file:
+    with open("status_IIIF_nvdgo.csv", 'w') as output_file:
         writer = csv.writer(output_file)
         writer.writerow(header)
         for url in urls:
